@@ -10,8 +10,31 @@ import { useCart } from '../context/CartContext'
 // Fallback food image
 const PLACEHOLDER = 'https://placehold.co/400x260/f97316/ffffff?text=🍽️'
 
+// ============================================================
+// DIRI KA MAG BUTANG UG IMAGES BAI
+// Example:
+// const FOOD_IMAGES = {
+//   'Pork Adobo + Rice':  'https://your-image-url.com/adobo.jpg',
+//   'Chicken Tinola':     'https://your-image-url.com/tinola.jpg',
+//   'Beef Sinigang':      'https://your-image-url.com/sinigang.jpg',
+//   'Pinakbet':           'https://your-image-url.com/pinakbet.jpg',
+//   'French Fries':       'https://your-image-url.com/fries.jpg',
+//   'Hotdog Sandwich':    'https://your-image-url.com/hotdog.jpg',
+//   'Kikiam':             'https://your-image-url.com/kikiam.jpg',
+//   'Iced Tea':           'https://your-image-url.com/icedtea.jpg',
+//   'Bottled Water':      'https://your-image-url.com/water.jpg',
+//   'Fruit Shake':        'https://your-image-url.com/shake.jpg',
+//   'Softdrinks':         'https://your-image-url.com/softdrinks.jpg',
+//   'Maja Blanca':        'https://your-image-url.com/maja.jpg',
+//   'Biko':               'https://your-image-url.com/biko.jpg',
+// }
+// ============================================================
+const FOOD_IMAGES = {
+  // paste your image URLs here bai!
+}
+
 export default function DashboardPage() {
-  const { user, signOut }    = useAuth()
+  const { user, signOut }     = useAuth()
   const { add, count, total } = useCart()
   const navigate              = useNavigate()
 
@@ -135,7 +158,10 @@ export default function DashboardPage() {
               <div key={item.id} className="card">
                 <div className="card-img-wrap">
                   <img
-                    src={item.image_url || PLACEHOLDER}
+                    {/* FOOD_IMAGES[item.name] = tan-awa ang FOOD_IMAGES sa itaas bai
+                        kung walay image sa FOOD_IMAGES, kuhaon ang image_url gikan Supabase
+                        kung walay image_url, ipakita ang PLACEHOLDER */}
+                    src={FOOD_IMAGES[item.name] || item.image_url || PLACEHOLDER}
                     alt={item.name}
                     onError={e => { e.target.src = PLACEHOLDER }}
                   />
