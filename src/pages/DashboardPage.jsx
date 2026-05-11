@@ -14,9 +14,20 @@ const PLACEHOLDER = "https://placehold.co/400x260/f97316/ffffff?text=🍽️";
 // Put your images in public/images/ folder
 // Example: public/images/cappuccino.jpg → reference as "/images/cappuccino.jpg"
 const imageMap = {
-  // 1: "/images/cappuccino.jpg",
-  // 2: "/images/espresso.jpg",
-  // 3: "/images/croissant.jpg",
+   1: "/images/pork-adoborice.jpg",
+   2: "/images/chicken tinola.jpg",
+   3: "/images/beef sinigang.jpg",
+   4: "/images/pinakbet.jpg",
+   5: "/images/french fries.jpg",
+   6: "/images/hotdog sandwich.jpg",
+   7: "/images/kikiam.jpg",
+   8: "/images/iced tea.jpg",
+   9: "/images/bottled water.jpg",
+   10: "/images/fruit shake.jpg",
+   11: "/images/softdrinks.jpg",
+   12: "/images/maja blanca.jpg",
+   13: "/images/biko.jpg",
+   
   // Add your item ID: image path mappings here
 };
 
