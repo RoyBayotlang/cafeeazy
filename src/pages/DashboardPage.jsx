@@ -14,19 +14,19 @@ const PLACEHOLDER = "https://placehold.co/400x260/f97316/ffffff?text=🍽️";
 // Put your images in public/images/ folder
 // Example: public/images/cappuccino.jpg → reference as "/images/cappuccino.jpg"
 const imageMap = {
-   1: "/images/pork-adoborice.jpg",
-   2: "/images/chicken tinola.jpg",
-   3: "/images/beef sinigang.jpg",
-   4: "/images/pinakbet.jpg",
-   5: "/images/french fries.jpg",
-   6: "/images/hotdog sandwich.jpg",
-   7: "/images/kikiam.jpg",
-   8: "/images/iced tea.jpg",
-   9: "/images/bottled water.jpg",
-   10: "/images/fruit shake.jpg",
-   11: "/images/softdrinks.jpg",
-   12: "/images/maja blanca.jpg",
-   13: "/images/biko.jpg",
+     1: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/pork-adoborice.jpg",
+   2: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/chicken%20tinola.jpg",
+   3: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/beef%20sinigang.jpg",
+   4: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/pinakbet.jpg",
+   5: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/french%20fries.jpg",
+   6: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/hotdog%20sandwich.jpg",
+   7: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/kikiam.jpg",
+   8: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/iced%20tea.jpg",
+   9: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/bottled%20water.jpg",
+   10: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/fruit%20shake.jpg",
+   11: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/softdrinks.jpg",
+   12: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/maja%20blanca.jpg",
+   13: "https://zwcfoznwempfkovxareh.supabase.co/storage/v1/object/public/food-images/biko.jpg",
    
   // Add your item ID: image path mappings here
 };
